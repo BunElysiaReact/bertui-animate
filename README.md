@@ -1,6 +1,6 @@
 # 🎭 BERTUI Animate
 
-**All animate.css animations with BERTUI prefix. Zero config, just import.**
+**All animate.css animations with BERTUI prefix. Zero config, zero imports.**
 
 Part of the [BERTUI](https://github.com/BunElysiaReact/BERTUI) framework family.
 
@@ -15,21 +15,19 @@ Part of the [BERTUI](https://github.com/BunElysiaReact/BERTUI) framework family.
 bun add bertui-animate
 ```
 
-```jsx
-import 'bertui-animate';
+**That's it.** Animations automatically available. No imports needed.
 
+```jsx
 function App() {
   return (
     <div>
-      <h1 className="bertui-bounce">Bouncing Header!</h1>
-      <p className="bertui-fadeIn bertui-delay-1s">Delayed fade in</p>
-      <button className="bertui-pulse bertui-infinite">Pulsing Button</button>
+      <h1 className="bertui-animated bertui-bounce">Bouncing Header!</h1>
+      <p className="bertui-animated bertui-fadeIn bertui-delay-1s">Delayed fade in</p>
+      <button className="bertui-animated bertui-pulse bertui-infinite">Pulsing Button</button>
     </div>
   );
 }
 ```
-
-**That's it.** No config. No setup. Just import and use.
 
 ---
 
@@ -70,31 +68,40 @@ bertui-rotateOut     bertui-flipOutX      bertui-flipOutY
 
 ---
 
-## 🎨 Utility Classes
+## 🎨 Usage
+
+### Base Class Required
+All animated elements need the `bertui-animated` class:
+
+```jsx
+<div className="bertui-animated bertui-fadeIn">
+  I fade in!
+</div>
+```
 
 ### Speed Control
 ```jsx
-<div className="bertui-fadeIn bertui-faster">2x faster</div>
-<div className="bertui-fadeIn bertui-fast">1.25x faster</div>
-<div className="bertui-fadeIn bertui-slow">2x slower</div>
-<div className="bertui-fadeIn bertui-slower">3x slower</div>
+<div className="bertui-animated bertui-fadeIn bertui-faster">2x faster</div>
+<div className="bertui-animated bertui-fadeIn bertui-fast">1.25x faster</div>
+<div className="bertui-animated bertui-fadeIn bertui-slow">2x slower</div>
+<div className="bertui-animated bertui-fadeIn bertui-slower">3x slower</div>
 ```
 
 ### Delays
 ```jsx
-<div className="bertui-bounce bertui-delay-1s">1 second delay</div>
-<div className="bertui-bounce bertui-delay-2s">2 seconds delay</div>
-<div className="bertui-bounce bertui-delay-3s">3 seconds delay</div>
-<div className="bertui-bounce bertui-delay-4s">4 seconds delay</div>
-<div className="bertui-bounce bertui-delay-5s">5 seconds delay</div>
+<div className="bertui-animated bertui-bounce bertui-delay-1s">1 second delay</div>
+<div className="bertui-animated bertui-bounce bertui-delay-2s">2 seconds delay</div>
+<div className="bertui-animated bertui-bounce bertui-delay-3s">3 seconds delay</div>
+<div className="bertui-animated bertui-bounce bertui-delay-4s">4 seconds delay</div>
+<div className="bertui-animated bertui-bounce bertui-delay-5s">5 seconds delay</div>
 ```
 
 ### Repeat
 ```jsx
-<div className="bertui-pulse bertui-repeat-1">Once</div>
-<div className="bertui-pulse bertui-repeat-2">Twice</div>
-<div className="bertui-pulse bertui-repeat-3">Three times</div>
-<div className="bertui-pulse bertui-infinite">Forever</div>
+<div className="bertui-animated bertui-pulse bertui-repeat-1">Once</div>
+<div className="bertui-animated bertui-pulse bertui-repeat-2">Twice</div>
+<div className="bertui-animated bertui-pulse bertui-repeat-3">Three times</div>
+<div className="bertui-animated bertui-pulse bertui-infinite">Forever</div>
 ```
 
 ---
@@ -120,21 +127,21 @@ bertui-rotateOut     bertui-flipOutX      bertui-flipOutY
 
 ### Simple Animation
 ```jsx
-<div className="bertui-fadeIn">
+<div className="bertui-animated bertui-fadeIn">
   I fade in!
 </div>
 ```
 
 ### Combined with Utilities
 ```jsx
-<div className="bertui-bounce bertui-slow bertui-delay-2s bertui-repeat-3">
+<div className="bertui-animated bertui-bounce bertui-slow bertui-delay-2s bertui-repeat-3">
   Slow bouncing with delay, repeats 3 times
 </div>
 ```
 
 ### Infinite Loop
 ```jsx
-<button className="bertui-pulse bertui-infinite">
+<button className="bertui-animated bertui-pulse bertui-infinite">
   Click Me (pulsing forever)
 </button>
 ```
@@ -153,7 +160,7 @@ function App() {
       </button>
       
       {animate && (
-        <div className="bertui-zoomIn">
+        <div className="bertui-animated bertui-zoomIn">
           I just zoomed in!
         </div>
       )}
@@ -177,7 +184,7 @@ Both files work identically. Your bundler will automatically use the minified ve
 
 | Feature | bertui-animate | animate.css |
 |---------|---------------|-------------|
-| **Import** | `import 'bertui-animate'` | CDN link in HTML |
+| **Import** | Zero imports needed | CDN link in HTML |
 | **Prefix** | `bertui-` (clean, consistent) | `animate__` (verbose) |
 | **Optimization** | Lightning CSS (cutting-edge) | PostCSS |
 | **Bundle Size** | ~9KB gzipped | ~11KB gzipped |
@@ -228,7 +235,7 @@ Original animations from [animate.css](https://github.com/animate-css/animate.cs
 
 **Made with ⚡ by the BERTUI team**
 
-*"Zero config. Just works."*
+*"Zero config. Zero imports. Just works."*
 
 [GitHub](https://github.com/BunElysiaReact/bertui-animate) • [npm](https://www.npmjs.com/package/bertui-animate) • [BERTUI Framework](https://github.com/BunElysiaReact/BERTUI)
 
