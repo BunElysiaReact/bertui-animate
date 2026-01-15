@@ -1,0 +1,16 @@
+@keyframes bertui-bertui-rotateInDownLeft {
+  from {
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.bertui-rotateInDownLeft {
+  animation-name: bertui-rotateInDownLeft;
+  transform-origin: left bottom;
+}

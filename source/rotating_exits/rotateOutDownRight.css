@@ -1,0 +1,15 @@
+@keyframes bertui-bertui-rotateOutDownRight {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+}
+
+.bertui-rotateOutDownRight {
+  animation-name: bertui-rotateOutDownRight;
+  transform-origin: right bottom;
+}

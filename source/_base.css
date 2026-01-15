@@ -1,0 +1,68 @@
+.bertui-animated {
+  animation-duration: var(--bertui-duration);
+  animation-fill-mode: both;
+}
+
+.bertui-animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+.bertui-animated.repeat-1 {
+  animation-iteration-count: var(--bertui-repeat);
+}
+
+.bertui-animated.repeat-2 {
+  animation-iteration-count: calc(var(--bertui-repeat) * 2);
+}
+
+.bertui-animated.repeat-3 {
+  animation-iteration-count: calc(var(--bertui-repeat) * 3);
+}
+
+.bertui-animated.delay-1s {
+  animation-delay: var(--bertui-delay);
+}
+
+.bertui-animated.delay-2s {
+  animation-delay: calc(var(--bertui-delay) * 2);
+}
+
+.bertui-animated.delay-3s {
+  animation-delay: calc(var(--bertui-delay) * 3);
+}
+
+.bertui-animated.delay-4s {
+  animation-delay: calc(var(--bertui-delay) * 4);
+}
+
+.bertui-animated.delay-5s {
+  animation-delay: calc(var(--bertui-delay) * 5);
+}
+
+.bertui-animated.faster {
+  animation-duration: calc(var(--bertui-duration) / 2);
+}
+
+.bertui-animated.fast {
+  animation-duration: calc(var(--bertui-duration) * 0.8);
+}
+
+.bertui-animated.slow {
+  animation-duration: calc(var(--bertui-duration) * 2);
+}
+
+.bertui-animated.slower {
+  animation-duration: calc(var(--bertui-duration) * 3);
+}
+
+@media print, (prefers-reduced-motion: reduce) {
+  .bertui-animated {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .bertui-animated[class*='Out'] {
+    opacity: 0;
+  }
+}

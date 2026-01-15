@@ -1,0 +1,13 @@
+@keyframes bertui-bertui-fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bertui-fadeIn {
+  animation-name: bertui-fadeIn;
+}

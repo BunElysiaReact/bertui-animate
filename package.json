@@ -1,0 +1,37 @@
+{
+  "name": "bertui-animate",
+  "version": "1.0.0",
+  "description": "All animate.css animations with BERTUI prefix. Zero config, just import.",
+  "main": "dist/bertui-animate.css",
+  "style": "dist/bertui-animate.css",
+  "files": [
+    "dist",
+    "source"
+  ],
+  "scripts": {
+    "build": "bun run build.js",
+    "dev": "bun run build.js --watch",
+    "convert": "bun run convert-animate-css.js"
+  },
+  "keywords": [
+    "bertui",
+    "animate",
+    "animation",
+    "css",
+    "transitions",
+    "effects"
+  ],
+  "author": "BERTUI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "lightningcss": "^1.23.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BunElysiaReact/bertui-animate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BunElysiaReact/bertui-animate/issues"
+  },
+  "homepage": "https://github.com/BunElysiaReact/bertui-animate#readme"
+}
