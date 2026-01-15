@@ -1,4 +1,4 @@
-@keyframes bertui-bertui-zoomIn {
+@keyframes bertui-zoomIn {
   from {
     opacity: 0;
     transform: scale3d(0.3, 0.3, 0.3);

@@ -1,4 +1,4 @@
-@keyframes bertui-bertui-lightSpeedInRight {
+@keyframes bertui-lightSpeedInRight {
   from {
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;

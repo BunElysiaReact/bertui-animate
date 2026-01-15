@@ -1,4 +1,4 @@
-@keyframes bertui-bertui-bounceOutRight {
+@keyframes bertui-bounceOutRight {
   20% {
     opacity: 1;
     transform: translate3d(-20px, 0, 0) scaleX(0.9);

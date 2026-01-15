@@ -1,6 +1,6 @@
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
-@keyframes bertui-bertui-pulse {
+@keyframes bertui-pulse {
   from {
     transform: scale3d(1, 1, 1);
   }

@@ -1,4 +1,4 @@
-@keyframes bertui-bertui-bounceOutDown {
+@keyframes bertui-bounceOutDown {
   20% {
     transform: translate3d(0, 10px, 0) scaleY(0.985);
   }
